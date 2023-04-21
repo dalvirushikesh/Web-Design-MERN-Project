@@ -32,7 +32,7 @@ exports.addUser=async (req,res)=>{
         console.log(req.body,"reqbody");
         const password=req.body.Password;
         const hashedPassword=await bcrypt.hash(password,saltRounds);
-        const task={Username:req.body.Username,Mail:req.body.Mail,Password:hashedPassword};
+        const task={Username:req.body.Username,Mail:req.body.Mail,Password:hashedPassword, isAdmin:req.body.isAdmin};
         console.log(task,"senttask");
         const newTask=await userService.createUser(task);
         console.log(newTask,"newtask");
@@ -65,6 +65,14 @@ exports.deleteUser=async (req,res)=>{
     try{
         const task=await userService.deleteUser(req.params.id);
         res.status(200).json({msg: 'successfully delete'});
+    }catch(err){
+        res.status(500).json({error: err.message});
+    }
+}
+exports.findAllUsers=async (req,res)=>{
+    try{
+        const task=await userService.findAllUsers();
+        res.status(200).send(task);
     }catch(err){
         res.status(500).json({error: err.message});
     }
