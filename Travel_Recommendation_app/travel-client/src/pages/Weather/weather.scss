@@ -1,0 +1,30 @@
+
+.mainconatiner{
+    background-color: rgba(2, 25, 26, 0.376);
+    width:100%;
+    height:80vh;
+    opacity: 80%;
+
+  }
+
+  .search{
+
+    display: flex;
+    justify-content: space-evenly;
+    // flex-wrap: wrap;
+
+  }
+  .placesearch{
+    align-items: center;
+    margin-left: 170px;
+  }
+
+  .weather-temp h1, .weather-temp h4, .weather-temp p{
+   
+    color: white;
+}
+  
+
+
+
+
