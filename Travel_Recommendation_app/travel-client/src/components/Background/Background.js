@@ -9,7 +9,11 @@ class Background extends Component {
         className="carousel slide1"
         data-bs-ride="carousel"
       >
-
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={imagebg} className=" w-100" alt="..." />
+          </div>
+        </div>
       </div>
     );
   }
