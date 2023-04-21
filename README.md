@@ -1,5 +1,5 @@
 # Travel Globe
-A MERN application that that aids users in getting around the city, checking the weather, and adding, updating, viewing, and reading about travel blogs from all around the world. Node JS and MongoDB are used in the backend implementation. SASS, Javascript, React JS, and Bootstrap components are used to construct the front end.
+A MERN application that aids users in getting around the city, checking the weather, and adding, updating, viewing, and reading about travel blogs from all around the world. Node JS and MongoDB are used in the backend implementation. SASS, Javascript, React JS, and Bootstrap components are used to construct the front end.
 
 ### User Stories:
     As a developer, I should allow user to sign-up.
