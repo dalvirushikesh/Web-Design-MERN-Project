@@ -3,7 +3,9 @@ const apiUrl = "http://localhost:5001/users/";
 
 //get user from database
 export function getUser(_id) {
+  
   return axios.get(apiUrl + _id);
+
 }
 
 //add one new user
