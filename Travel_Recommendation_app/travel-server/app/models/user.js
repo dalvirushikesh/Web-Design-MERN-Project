@@ -19,6 +19,9 @@ const UserSchema = new mongoose.Schema({
         CreatedTime: {
             type: Date,
             default: Date.now
+        },
+        isAdmin:{
+            type:Boolean,
         }
     },
 );
