@@ -12,6 +12,9 @@ class Background extends Component {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src={imagebg} className=" w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Travel, Breathe and Be the Difference!</h1>
+            </div>
           </div>
         </div>
       </div>
