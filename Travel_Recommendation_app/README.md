@@ -47,4 +47,4 @@ post http://localhost:5000/places
 }
 
 in frontend
-npm install jquery --save
+npm install jquery --save .
